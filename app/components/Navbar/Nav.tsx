@@ -4,7 +4,12 @@ import React from 'react';
 import Logo from '@/public/images/sportify.svg';
 import { BiMenu } from 'react-icons/bi';
 
-const Nav = () => {
+
+interface Props {
+    openNav:() => void;
+}
+
+const Nav = ({openNav}:Props) => {
   return (
     <div className="h-[12vh] shadow-md">
         <div className="flex items-center justify-between h-[100%] w-[90%] mx-auto">
@@ -34,7 +39,9 @@ const Nav = () => {
                     Join Now 
                 </button>
                 {/*menu */}
-                <BiMenu className="w-[2rem] h-[2rem] text-amber-600 lg:hidden" />
+                <BiMenu 
+                onClick={openNav}
+                className="w-[2rem] h-[2rem] text-amber-600 lg:hidden" />
             </div>
           </div>
         </div>
