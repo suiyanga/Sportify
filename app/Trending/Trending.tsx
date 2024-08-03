@@ -39,8 +39,8 @@ const Trending = () => {
              <div>
                 <NewsCard 
                 image="/images/fans.jpg" 
-                date=" August 5, 2024" 
-                title="Paris Olympics(Football): France onto the Semi-Finals" 
+                date=" July 31, 2024" 
+                title="Olympics(Football): Morocco onto the Semi-Finals" 
                 height="h-[300px]"  
                 />
             </div>
