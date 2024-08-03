@@ -1,15 +1,27 @@
-import React from 'react';
+'use client'
+
+import React, { useState } from 'react';
 import { BiCalendar, BiUser } from 'react-icons/bi';
 import { FaPlay } from 'react-icons/fa';
+import Modal from '../Helper/Modal';
 
 const Hero = () => {
+
+    const [showModal, setShowModal] = useState(false)
+    const showModalHandler =()=> setShowModal(true)
+    const closeModalHandler =()=> setShowModal(false)
+
+
   return (
     <div className=" relative h-[88vh] bg-[url('/images/football2.jpg')] bg-cover bg-center opacity-70">
+      {/* modal */}
+      {showModal && <Modal hideModal={closeModalHandler} />}
+
         {/*dark overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,0.68)] "></div>    
         <div className="relative z-[10] flex items-center h-[100%] text-white">
             <div className="w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-[2rem]">
-                {/* text content */}
+                 {/* text content */}
                 <div>
                     <p className="sm:px-8 py-1 mb-[1rem] text-[12px] sm:text-[16px] bg-amber-600 text-white w-fit uppercase">
                         Athletics
@@ -41,7 +53,9 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* play button */}
-                <div className="w-[10rem] lg:ml-auto h-[10rem] rounded-full bg-amber-600 hover:bg-black transition-all duration-200 cursor-pointer sm:flex flex-col items-center justify-center hidden">
+                <div 
+                onClick={showModalHandler}
+                className="w-[10rem] lg:ml-auto h-[10rem] rounded-full bg-amber-600 hover:bg-black transition-all duration-200 cursor-pointer sm:flex flex-col items-center justify-center hidden">
                     <FaPlay className="w-[3rem] h-[3rem] text-white" />
                 </div>
             </div>
