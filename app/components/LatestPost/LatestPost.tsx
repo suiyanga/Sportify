@@ -11,28 +11,28 @@ const LatestPost = () => {
             <div>
                 <PostCard 
                 title=" THE PREMIER LEAGUE: WHAT TO EXPECT?"
-                image="/images/ball.jpg"
+                image="/images/balls.jpg"
                 date=" 1 September, 2024" 
                 />
             </div>
             <div>
                 <PostCard 
-                title=" THE PREMIER LEAGUE: WHAT TO EXPECT?"
-                image="/images/ball.jpg"
+                title=" PARIS OLYMPICS LAST DAY"
+                image="/images/athletes.jpg"
                 date=" 1 September, 2024" 
                 />
             </div>
             <div>
                 <PostCard 
-                title=" THE PREMIER LEAGUE: WHAT TO EXPECT?"
-                image="/images/ball.jpg"
+                title=" MANCITY VS MAN UNITED"
+                image="/images/stadium.jpg"
                 date=" 1 September, 2024" 
                 />
             </div>
             <div>
                 <PostCard 
-                title=" THE PREMIER LEAGUE: WHAT TO EXPECT?"
-                image="/images/ball.jpg"
+                title=" NETO TO CHELSEA !"
+                image="/images/chelsea.jpg"
                 date=" 1 September, 2024" 
                 />
             </div>

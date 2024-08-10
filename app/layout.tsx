@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "./components/Navbar/ResponsiveNav";
+import Footer from "./components/Footer/Footer";
 
 const kanit = Kanit({
   weight: ['200','300','400','500','600','700'],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={kanit.className}>
         <ResponsiveNav />
         {children}
+        <Footer />
         </body>
     </html>
   );
