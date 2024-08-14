@@ -9,7 +9,11 @@ const Latest = () => {
         <h1 className="heading">Latest News</h1>
         <div className="w-[80%] mx-auto pt-[4rem] grid grid-cols-1 lg:grid-cols-5 gap-[2rem]">
             {/* big card */}
-            <div className="col-span-3">
+            <div 
+             data-aos="fade-right"
+             data-aos-anchor-placement="top-center" 
+             className="col-span-3"
+             >
                 <NewsCard 
                 image="/images/football2.jpg" 
                 date="August 7, 2024" 
@@ -19,21 +23,34 @@ const Latest = () => {
             {/* small card */}
             <div className="col-span-2">
                 {/* small card */}
-                <div>
+                <div 
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="200"
+                >
                     <SmallNewsCard 
                     image="/images/blue.jpg" 
                     date="August 15, 2024" 
                     title="Fantasy Premier League is back!" 
                     />
                 </div>
-                <div className="mt-[1.4rem] mb-[1.4rem]">
+                <div 
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="400" 
+                className="mt-[1.4rem] mb-[1.4rem]"
+                >
                     <SmallNewsCard 
                     image="/images/fans.jpg" 
                     date="August 10, 2024" 
                     title="Paris Olympics half way" 
                     />
                 </div>
-                <div>
+                <div 
+                data-aos="zoom-in"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="600"
+                >
                     <SmallNewsCard 
                     image="/images/madrid.jpg" 
                     date="August 20, 2024" 

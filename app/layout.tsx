@@ -3,6 +3,7 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "./components/Navbar/ResponsiveNav";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/Helper/ScrollToTop";
 
 const kanit = Kanit({
   weight: ['200','300','400','500','600','700'],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <ResponsiveNav />
         {children}
         <Footer />
+        <ScrollToTop />
         </body>
     </html>
   );

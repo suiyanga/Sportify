@@ -9,7 +9,10 @@ const Trending = () => {
         {/* card div */}
         <div className="pt-[2rem] md:pt-[3rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
             {/* card 1 */}
-            <div>
+            <div 
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-center"
+            >
                 <NewsCard 
                 image="/images/field.jpg" 
                 date=" August 1, 2024" 
@@ -18,7 +21,11 @@ const Trending = () => {
                 />
             </div>
              {/* card 2 */}
-             <div>
+             <div 
+             data-aos="fade-right"
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="200"
+             >
                 <NewsCard 
                 image="/images/madrid.jpg" 
                 date=" July 29, 2024" 
@@ -27,7 +34,11 @@ const Trending = () => {
                 />
             </div>
              {/* card 3 */}
-             <div>
+             <div 
+             data-aos="fade-right"
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="400"
+             >
                 <NewsCard 
                 image="/images/blue.jpg" 
                 date=" August 18, 2024" 
@@ -36,7 +47,11 @@ const Trending = () => {
                 />
             </div>
              {/* card 4 */}
-             <div>
+             <div 
+             data-aos="fade-right"
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="600"
+             >
                 <NewsCard 
                 image="/images/fans.jpg" 
                 date=" July 31, 2024" 
