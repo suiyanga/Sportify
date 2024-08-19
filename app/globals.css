@@ -4,6 +4,25 @@
 
 
 @layer components {
+
+    @keyframes shine {
+        0% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.05);
+        }
+        100% {
+          opacity: 0.5;
+        }
+      }
+    
+      /* Create the animate-shine utility class */
+      .animate-shine {
+        animation: shine 1s ease-in-out infinite;
+      }
+    
     .heading {
         @apply text-white text-[25px] md:text-[35px] font-semibold w-[80%] mx-auto
     }
